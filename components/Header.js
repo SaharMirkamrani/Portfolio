@@ -7,10 +7,12 @@ const Header = () => {
         className="container mx-auto flex flex-col justify-center items-center md:flex-row"
         style={{ fontFamily: "Poppins, sans-serif" }}
       >
-				<Link href="/">
-        <h1 className="text-2xl font-semibold md:mr-6 ml-10 bg-gradient-to-r text-transparent from-teal-900 via-green-300 to-teal-600 bg-clip-text">Sahar Mirkamrani</h1>
+        <Link href="/">
+          <h1 className="text-2xl font-semibold md:mr-6 ml-10 bg-gradient-to-r text-transparent from-teal-900 via-green-300 to-teal-600 bg-clip-text">
+            Sahar Mirkamrani
+          </h1>
         </Link>
-				<div className="container mx-auto flex flex-col justify-center items-center md:flex-row">
+        <div className="container mx-auto flex flex-col justify-center items-center md:flex-row">
           <nav className="flex space-x-6">
             <Link href="/about-me">
               <div className="text-lg cursor-pointer transition-transform transform-gpu hover:rotate-45">

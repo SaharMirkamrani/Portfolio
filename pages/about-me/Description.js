@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import web3 from "../../assets/Web3.jpg";
-import solidity from "../../assets/solidity.svg";
 import me from "../../assets/pic.jpg";
 import crypto from "../../assets/crypto.png";
 import security from "../../assets/security.jpg";
@@ -9,7 +8,6 @@ import sc1 from "../../assets/Screenshot (9).png";
 import sc2 from "../../assets/Screenshot (10).png";
 import sc3 from "../../assets/Screenshot (11).png";
 import Image from "next/image";
-import Link from "next/link";
 
 const Description = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -25,60 +23,97 @@ const Description = () => {
   return (
     <div className="bg-cream-50 text-teal-900 md:py-20">
       <div className="container mx-auto flex flex-col flex-col-reverse md:flex-row items-center justify-center space-x-4 px-8">
-  <div className="w-3/4 md:w-1/4 text-center md:text-left">
-    <p className="text-md md:text-md" style={{ fontFamily: "Poppins, sans-serif" }}>
-      {paragraph_1}
-    </p>
-  </div>
+        <div className="w-3/4 md:w-1/4 text-center md:text-left">
+          <p
+            className="text-md md:text-md"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
+            {paragraph_1}
+          </p>
+        </div>
 
-  <div
-    className="w-full md:w-1/4"
-    onMouseEnter={() => setIsHovered(true)}
-    onMouseLeave={() => setIsHovered(false)}
-  >
-    <div
-      className={`rounded-full scale-50 overflow-hidden transform ${
-        isHovered ? "rotate-6" : "rotate-0"
-      }`}
-      style={{ transition: "transform 0.3s ease" }}
-    >
-      <Image
-        src={me}
-        width={500}
-        height={500}
-        alt="Picture of the author"
-      />
-    </div>
-  </div>
-</div>
-
+        <div
+          className="w-full md:w-1/4"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <div
+            className={`rounded-full scale-75 overflow-hidden transform ${
+              isHovered ? "rotate-6" : "rotate-0"
+            }`}
+            style={{ transition: "transform 0.3s ease" }}
+          >
+            <Image
+              src={me}
+              width={500}
+              height={500}
+              alt="Picture of the author"
+            />
+          </div>
+        </div>
+      </div>
 
       <div className="text-center mt-4">
-        <h1 className="text-teal-800 text-2xl font-semibold my-8 md:mt-0">My Experiences</h1>
+        <h1 className="text-teal-800 text-2xl font-semibold my-8 md:mt-0">
+          My Experiences
+        </h1>
       </div>
 
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center space-x-4 px-8 md:space-x-0">
-  <div className="w-2/3 md:w-1/4" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-    <div className={`rounded-full scale-75 overflow-hidden transform ${isHovered ? "rotate-6" : "rotate-0"}`} style={{ transition: "transform 0.3s ease" }}>
-      <Image src={web3} width={500} height={500} alt="Picture of the author" />
-    </div>
-  </div>
-  <div className="w-3/4 md:w-1/4 text-center">
-    <p className="text-md md:text-md" style={{ fontFamily: "Poppins, sans-serif" }}>
-      {paragraph_2}
-    </p>
-    <br />
-    <p className="text-lg text-green-500" style={{ fontFamily: "Poppins, sans-serif" }}>
-      DM me to get the best tools for fundamental analysis for free!
-    </p>
-  </div>
-  <div className="w-2/3 md:w-1/4" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-    <div className={`rounded-full scale-75 overflow-hidden transform ${isHovered ? "rotate-6" : "rotate-0"}`} style={{ transition: "transform 0.3s ease" }}>
-      <Image src={crypto} width={500} height={500} alt="Picture of the author" />
-    </div>
-  </div>
-</div>
-
+        <div
+          className="w-2/3 md:w-1/4"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <div
+            className={`rounded-full scale-75 overflow-hidden transform ${
+              isHovered ? "rotate-6" : "rotate-0"
+            }`}
+            style={{ transition: "transform 0.3s ease" }}
+          >
+            <Image
+              src={web3}
+              width={500}
+              height={500}
+              alt="Picture of the author"
+            />
+          </div>
+        </div>
+        <div className="w-3/4 md:w-1/4 text-center">
+          <p
+            className="text-md md:text-md"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
+            {paragraph_2}
+          </p>
+          <br />
+          <p
+            className="text-lg text-green-500"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
+            DM me to get the best tools for fundamental analysis for free!
+          </p>
+        </div>
+        <div
+          className="w-2/3 md:w-1/4"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <div
+            className={`rounded-full scale-75 overflow-hidden transform ${
+              isHovered ? "rotate-6" : "rotate-0"
+            }`}
+            style={{ transition: "transform 0.3s ease" }}
+          >
+            <Image
+              src={crypto}
+              width={500}
+              height={500}
+              alt="Picture of the author"
+            />
+          </div>
+        </div>
+      </div>
 
       <div className="text-center my-12">
         <h1 className="text-teal-800 text-xl font-semibold">
@@ -87,24 +122,52 @@ const Description = () => {
       </div>
 
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center space-x-4 px-8 md:space-x-0">
-  <div className="w-3/4 md:w-1/4" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-    <div className={`rounded-full scale-75 overflow-hidden transform ${isHovered ? "rotate-6" : "rotate-0"}`} style={{ transition: "transform 0.3s ease" }}>
-      <Image src={security} width={500} height={500} alt="Picture of the author" />
-    </div>
-    <div className={`rounded-full scale-75 overflow-hidden transform ${isHovered ? "rotate-6" : "rotate-0"}`} style={{ transition: "transform 0.3s ease" }}>
-      <Image src={eth} width={500} height={500} alt="Picture of the author" />
-    </div>
-  </div>
-  <div className="w-3/4 md:w-1/4 text-center">
-    <p className="text-md md:text-md" style={{ fontFamily: "Poppins, sans-serif" }}>
-      {paragraph_3}
-    </p>
-  </div>
-</div>
+        <div
+          className="w-3/4 md:w-1/4"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <div
+            className={`rounded-full scale-75 overflow-hidden transform ${
+              isHovered ? "rotate-6" : "rotate-0"
+            }`}
+            style={{ transition: "transform 0.3s ease" }}
+          >
+            <Image
+              src={security}
+              width={500}
+              height={500}
+              alt="Picture of the author"
+            />
+          </div>
+          <div
+            className={`rounded-full scale-75 overflow-hidden transform ${
+              isHovered ? "rotate-6" : "rotate-0"
+            }`}
+            style={{ transition: "transform 0.3s ease" }}
+          >
+            <Image
+              src={eth}
+              width={500}
+              height={500}
+              alt="Picture of the author"
+            />
+          </div>
+        </div>
+        <div className="w-3/4 md:w-1/4 text-center">
+          <p
+            className="text-md md:text-md"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
+            {paragraph_3}
+          </p>
+        </div>
+      </div>
 
-
-      <div className="text-center mb-12">
-        <h1 className="text-teal-800 text-xl font-semibold">Achievements</h1>
+      <div className="text-center mt-4">
+        <h1 className="text-teal-800 text-2xl font-semibold my-8 md:mt-0">
+          My Achievements
+        </h1>
       </div>
 
       <div className="container mx-auto flex flex-col items-center space-y-4 px-8 lg:mb-24 pb-24">
