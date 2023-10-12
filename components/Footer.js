@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-teal-900 text-cream-100 py-4 fixed bottom-0 w-full">
       <div className="container mx-auto flex space-x-4 items-center justify-center">
-        <p className="pl-2 text-lg text-green-200 lg:w-56">Contact me: </p>
+        <p className="pl-2 text-lg text-cream-100 lg:w-56">Contact me: </p>
         <div className="flex space-x-4">
           <Link href="mailto:saharmirkamrani@gmail.com">
             <BiLogoGmail />

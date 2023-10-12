@@ -20,28 +20,36 @@ const Introduction = () => {
   const truncatedParagraph = truncateParagraph(paragraph, 250);
 
   return (
-    <div
-      className="bg-cream-50 text-teal-900 py-20"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+    <div className="bg-cream-50 text-teal-900 py-20">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center space-x-4 px-8">
         <div className="w-1/2 md:w-1/4 text-center md:text-left">
-          <p className="text-lg" style={{ fontFamily: 'Poppins, sans-serif' }}>
-            {truncatedParagraph}
-            {" "}
+          <p className="text-lg" style={{ fontFamily: "Poppins, sans-serif" }}>
+            {truncatedParagraph}{" "}
             <Link href="/about-me">
-              <span className="text-green-500 hover:underline cursor-pointer">Read More...</span>
+              <span className="text-green-500 hover:underline cursor-pointer">
+                Read More...
+              </span>
             </Link>
           </p>
         </div>
 
-        <div className="w-1/2 md:w-1/4">
+        <div
+          className="w-1/2 md:w-1/4"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
           <div
-            className={`rounded-full scale-50 overflow-hidden transform ${isHovered ? 'rotate-6' : 'rotate-0'}`}
-            style={{ transition: 'transform 0.3s ease' }}
+            className={`rounded-full scale-50 overflow-hidden transform ${
+              isHovered ? "rotate-6" : "rotate-0"
+            }`}
+            style={{ transition: "transform 0.3s ease" }}
           >
-            <Image src={pic} width={500} height={500} alt="Picture of the author" />
+            <Image
+              src={pic}
+              width={500}
+              height={500}
+              alt="Picture of the author"
+            />
           </div>
         </div>
       </div>

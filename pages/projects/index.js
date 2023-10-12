@@ -1,10 +1,13 @@
-import React from 'react';
+import React from "react";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 const Projects = () => {
   return (
-    <div>
-      <h2>Projects</h2>
-      {/* Add your Projects content here */}
+    <div className="bg-cream-50 h-screen">
+      <Header />
+
+      <Footer />
     </div>
   );
 };
