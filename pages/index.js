@@ -3,12 +3,14 @@ import 'tailwindcss/tailwind.css'
 import Introduction from "../components/Introduction";
 import Footer from "../components/Footer"
 
-export default function Home() {
+const Home = () =>  {
   return (
-    <div className="bg-cream-50 h-screen">
+    <div className="bg-cream-50 min-h-screen max-h-max py-24">
       <Header />
       <Introduction />
       <Footer />
     </div>
   );
 }
+
+export default Home;

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="bg-gradient-to-r from-cream-100 via-teal-100 via-teal-200 via-teal-300 via-teal-400 via-teal-500 via-teal-600 via-teal-700 via-teal-800 to-teal-900 text-cream-100 py-4 shadow-md">
+    <header className="z-10 fixed top-0 w-full bg-gradient-to-r from-cream-100 via-teal-100 via-teal-200 via-teal-300 via-teal-400 via-teal-500 via-teal-600 via-teal-700 via-teal-800 to-teal-900 text-cream-100 py-4 shadow-sm">
       <div
         className="container mx-auto flex flex-col justify-center items-center md:flex-row"
         style={{ fontFamily: "Poppins, sans-serif" }}

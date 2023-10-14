@@ -6,7 +6,7 @@ import Link from "next/link";
 const Introduction = () => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const paragraph = `I'm a 23-year-old software engineer with a passion for exploring new horizons and problem-solving. I thrive on challenges and am constantly seeking to expand my knowledge in the ever-evolving world of technology. My resourcefulness and commitment to research allow me to adapt to new situations and stay ahead in the field of software development. With a strong foundation in front-end development, I'm dedicated to creating innovative and user-friendly solutions that make a meaningful impact.`;
+  const paragraph = `Hey there! My name is Sahar and I'm a 23 year old software engineer with a passion for web3 space. I love problem-solving and cutting-edge technologies and I try my best to keep up with them. My resourcefulness and my researching skills allow me to adapt to new situations. With a strong foundation in front-end development, I'm dedicated to creating innovative and user-friendly solutions.`;
 
   return (
     <div className="bg-cream-50 text-teal-900 pb-20 md:py-10">
@@ -16,9 +16,9 @@ const Introduction = () => {
           <p className="text-lg" style={{ fontFamily: "Poppins, sans-serif" }}>
             {paragraph} <br />
             <Link href="/about-me">
-              <span className="text-green-500 hover:underline cursor-pointer">
+              <p className="text-green-500 hover:underline cursor-pointer font-semibold pt-4">
                 Learn More...
-              </span>
+              </p>
             </Link>
           </p>
         </div>

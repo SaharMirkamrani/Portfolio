@@ -14,18 +14,18 @@ const Description = () => {
 
   const paragraph_1 = `I'm 23 years old and I'm a software engineer mainly focused on front-end development. I have explored some other territories in the computer science field as well. I am very flexible and I love to learn anything that helps me deepen my knowledge of this huge ocean of a field, I jump head first and I'm not scared of the unknown. I'm very resourceful and I research a lot.`;
 
-  const paragraph_2 = `So, first off, I was a front-end dev, then I began to learn about this exciting new world called web3. And that was the beginning of my journey to learn about Solidity and programming apps on Ethereum. At the same time, I was researching day and night about tokenomics of the crypto projects and their innovative ideas. I got hired as an intern to work on an NFT project related to authentication, then my position changed to a fundamental analyzer/researcher. My task was to analyze crypto projects from various aspects and rate them if they are a good long-term investment or not.`;
+  const paragraph_2 = `So, first off, I started with front-end development, then I began to learn about this exciting new world called web3. And that was the beginning of my journey to learn about Solidity and programming apps on Ethereum. At the same time, I was researching day and night about tokenomics of the crypto projects and their innovative ideas. I got hired as an intern to work on an NFT project related to authentication, then my position changed to a fundamental analyzer/researcher. My task was to analyze crypto projects from various aspects and rate them if they are a good long-term investment or not.`;
 
   const paragraph_3 = `At this point I was reading different smart contract codebases, then I stumbled upon web3 security and bug bounties. At first I found about code4rena.com and I was instantly interested. I began to research about smart contract vulnerabilities. Not long after that I started participating in the audit contests. I managed to uncover a couple of High and Medium severity bugs as well as a ton of Quality Assurance and Gas Optimization reports.`;
 
-  const paragraph_4 = `As you can see, I was a member of two teams, Red lotus and Tatakae. We worked on different codebases, from liquid staking protocols to Automated Market maker mechanisms, liquidity pools and beyond.`;
+  const paragraph_4 = `As you can see, I was a member of two teams, Red lotus and Tatakae. We worked on different codebases, from liquid staking protocols to Automated Market Maker mechanisms, lending and borrowing platforms, liquidity pools and beyond.`;
 
   return (
-    <div className="bg-cream-50 text-teal-900 md:py-20">
+    <div className="bg-cream-50 text-teal-900 pb-36">
       <div className="container mx-auto flex flex-col flex-col-reverse md:flex-row items-center justify-center space-x-4 px-8">
         <div className="w-3/4 md:w-1/4 text-center md:text-left">
           <p
-            className="text-md md:text-md"
+            className="text-lg md:text-md"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {paragraph_1}
@@ -54,7 +54,7 @@ const Description = () => {
       </div>
 
       <div className="text-center mt-4">
-        <h1 className="text-teal-800 text-2xl font-semibold my-8 md:mt-0">
+        <h1 className="text-teal-800 text-2xl font-bold my-8 md:mt-0">
           My Experiences
         </h1>
       </div>
@@ -81,14 +81,14 @@ const Description = () => {
         </div>
         <div className="w-3/4 md:w-1/4 text-center">
           <p
-            className="text-md md:text-md"
+            className="text-lg md:text-md"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {paragraph_2}
           </p>
           <br />
           <p
-            className="text-lg text-green-500"
+            className="text-lg text-red-300 font-semibold underline"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             DM me to get the best tools for fundamental analysis for free!
@@ -116,7 +116,7 @@ const Description = () => {
       </div>
 
       <div className="text-center my-12">
-        <h1 className="text-teal-800 text-xl font-semibold">
+        <h1 className="text-teal-800 text-xl font-bold">
           Next Milestone: Web3 security!
         </h1>
       </div>
@@ -156,7 +156,7 @@ const Description = () => {
         </div>
         <div className="w-3/4 md:w-1/4 text-center">
           <p
-            className="text-md md:text-md"
+            className="text-lg md:text-md"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {paragraph_3}
@@ -165,12 +165,12 @@ const Description = () => {
       </div>
 
       <div className="text-center mt-4">
-        <h1 className="text-teal-800 text-2xl font-semibold my-8 md:mt-0">
+        <h1 className="text-teal-800 text-2xl font-bold my-8 md:mt-0">
           My Achievements
         </h1>
       </div>
 
-      <div className="container mx-auto flex flex-col items-center space-y-4 px-8 lg:mb-24 pb-24">
+      <div className="container mx-auto flex flex-col items-center space-y-4 px-8 lg:mb-24">
         <Image
           src={sc1}
           width={1000}
@@ -193,7 +193,7 @@ const Description = () => {
           alt="Picture of the author"
         />
         <p
-          className="text-md w-2/3 md:w-1/3 pt-4 text-center md:text-left"
+          className="text-lg w-2/3 md:w-1/3 pt-4 text-center md:text-left"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
           {paragraph_4}

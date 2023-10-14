@@ -13,23 +13,23 @@ const Footer = () => {
           className="pl-2 text-lg text-cream-100 lg:w-56"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
-          Contact me:{" "}
+          Contact me:
         </p>
         <div className="flex space-x-4">
           <Link href="mailto:saharmirkamrani@gmail.com">
-            <BiLogoGmail />
+            <BiLogoGmail className="transition-transform transform hover:scale-110" />
           </Link>
           <Link href="https://twitter.com/traumatic_devep">
-            <FaTwitter />
+            <FaTwitter className="transition-transform transform hover:scale-110" />
           </Link>
           <Link href="https://www.linkedin.com/in/sahar-mirkamrani">
-            <IoLogoLinkedin />
+            <IoLogoLinkedin className="transition-transform transform hover:scale-110" />
           </Link>
           <Link href="https://github.com/SaharMirkamrani">
-            <BsGithub />
+            <BsGithub className="transition-transform transform hover:scale-110" />
           </Link>
           <Link href="https://t.me/SaharMirkamrani">
-            <BsTelegram />
+            <BsTelegram className="transition-transform transform hover:scale-110" />
           </Link>
         </div>
       </div>
