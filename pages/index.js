@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import "tailwindcss/tailwind.css";
+
 import Introduction from "../components/Introduction";
 import Footer from "../components/Footer";
 import YouTube from "react-youtube";
@@ -19,14 +19,14 @@ const opts = {
 const Home = () => {
   return (
     <div
-      className="bg-cream-50 min-h-screen max-h-max py-24"
+      className="min-h-screen py-24 bg-cream-50 max-h-max"
       style={{ fontFamily: "Poppins, sans-serif" }}
     >
       <Header />
       <Introduction />
       <Footer />
       <div className="flex flex-col items-center justify-center p-12">
-        <h1 className="text-2xl font-semibold mb-4 text-teal-800">
+        <h1 className="mb-4 text-2xl font-semibold text-teal-800">
           TLDR Resume:
         </h1>
         <div className="relative">
