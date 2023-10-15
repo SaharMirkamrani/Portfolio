@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import pic from "../assets/Me.jpg";
+import pic from "../assets/me.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
