@@ -87,7 +87,7 @@ const Cards = () => {
                     </ul>
                   </div>
                   <p>{project.description}</p>
-                  <p className="font-bold text-red-300 my-4">
+                  <div className="font-bold text-red-300 my-4">
                     Link:{" "}
                     <Link href={project.url} target="_blank">
                       {" "}
@@ -95,7 +95,7 @@ const Cards = () => {
                         {project.title}{" "}
                       </span>{" "}
                     </Link>
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>

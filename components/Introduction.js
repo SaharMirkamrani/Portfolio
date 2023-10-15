@@ -13,14 +13,14 @@ const Introduction = () => {
       <UpArrow />
       <div className="container mx-auto flex flex-col flex-col-reverse md:flex-row items-center justify-center space-x-4 px-8">
         <div className="md:w-1/3 text-center md:text-left">
-          <p className="text-lg" style={{ fontFamily: "Poppins, sans-serif" }}>
+          <div className="text-lg" style={{ fontFamily: "Poppins, sans-serif" }}>
             {paragraph} <br />
             <Link href="/about-me">
               <p className="text-green-500 hover:underline cursor-pointer font-semibold pt-4">
                 Learn More...
               </p>
             </Link>
-          </p>
+          </div>
         </div>
 
         <div
