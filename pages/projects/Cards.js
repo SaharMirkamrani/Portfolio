@@ -51,8 +51,8 @@ const Cards = () => {
   }
 
   const opts = {
-    height: '390',
-    width: '640',
+    height: "250",
+    width: "350",
     playerVars: {
       autoplay: 1,
     },
@@ -70,7 +70,7 @@ const Cards = () => {
               key={project.id}
               className="w-full md:w-1/3 lg:max-w-max p-4 transform hover:scale-105 transition-transform duration-300"
             >
-              <div className="rounded-lg shadow-lg overflow-hidden bg-teal-800 flex flex-col pt-4 md:min-h-full">
+              <div className="rounded-lg shadow-lg overflow-hidden bg-teal-800 flex flex-col items-center pt-4 md:min-h-full">
                 {/* Video */}
                 <YouTube videoId={project.videoURL} opts={opts} onReady={onPlayerReady} />
                 {/* Project Details */}

@@ -21,11 +21,11 @@ const Description = () => {
   const paragraph_4 = `As you can see, I was a member of two teams, Red lotus and Tatakae. We worked on different codebases, from liquid staking protocols to Automated Market Maker mechanisms, lending and borrowing platforms, liquidity pools and beyond.`;
 
   return (
-    <div className="bg-cream-50 text-teal-900 pb-36">
+    <div className="bg-cream-50 text-teal-900 pb-20">
       <div className="container mx-auto flex flex-col flex-col-reverse md:flex-row items-center justify-center space-x-4 px-8">
         <div className="w-3/4 md:w-1/4 text-center md:text-left">
           <p
-            className="text-lg md:text-md"
+            className="md:text-md"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {paragraph_1}
@@ -54,7 +54,7 @@ const Description = () => {
       </div>
 
       <div className="text-center mt-4">
-        <h1 className="text-teal-800 text-2xl font-bold my-8 md:mt-0">
+        <h1 className="text-red-500 text-2xl font-bold my-8 md:mt-0">
           My Experiences
         </h1>
       </div>
@@ -81,14 +81,14 @@ const Description = () => {
         </div>
         <div className="w-3/4 md:w-1/4 text-center">
           <p
-            className="text-lg md:text-md"
+            className="md:text-md"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {paragraph_2}
           </p>
           <br />
           <p
-            className="text-lg text-red-300 font-semibold underline"
+            className=" text-red-300 font-semibold underline"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             DM me to get the best tools for fundamental analysis for free!
@@ -116,7 +116,7 @@ const Description = () => {
       </div>
 
       <div className="text-center my-12">
-        <h1 className="text-teal-800 text-xl font-bold">
+        <h1 className="text-red-500 text-xl font-bold">
           Next Milestone: Web3 security!
         </h1>
       </div>
@@ -156,7 +156,7 @@ const Description = () => {
         </div>
         <div className="w-3/4 md:w-1/4 text-center">
           <p
-            className="text-lg md:text-md"
+            className="md:text-md"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {paragraph_3}
@@ -165,7 +165,7 @@ const Description = () => {
       </div>
 
       <div className="text-center mt-4">
-        <h1 className="text-teal-800 text-2xl font-bold my-8 md:mt-0">
+        <h1 className="text-red-500 text-2xl font-bold my-8 md:mt-0">
           My Achievements
         </h1>
       </div>
@@ -193,7 +193,7 @@ const Description = () => {
           alt="Picture of the author"
         />
         <p
-          className="text-lg w-2/3 md:w-1/3 pt-4 text-center md:text-left"
+          className="text-md w-2/3 md:w-1/3 pt-4 text-center md:text-left"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
           {paragraph_4}

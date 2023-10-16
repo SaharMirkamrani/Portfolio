@@ -14,12 +14,12 @@ const Introduction = () => {
       <div className="container flex flex-col-reverse items-center justify-center px-8 mx-auto space-x-4 md:flex-row">
         <div className="text-center md:w-1/3 md:text-left">
           <div
-            className="text-lg"
+            className="text-md md:text-lg"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {paragraph} <br />
             <Link href="/about-me">
-              <p className="pt-4 font-semibold text-green-500 cursor-pointer hover:underline">
+              <p className="pt-4 font-semibold text-red-500 cursor-pointer hover:underline">
                 Learn More...
               </p>
             </Link>
@@ -52,7 +52,8 @@ const Introduction = () => {
 
 const UpArrow = () => {
   return (
-    <div className="flex items-center justify-center w-1/2 pb-10 mx-auto mt-12 text-xl text-green-300 transform rotate-0 animate-bounce md:w-5/6 md:mt-2 md:mr-2">
+    <div className="animate-bounce text-green-300 text-xl rotate-0 transform w-1/2 md:w-5/6 mx-auto mt-12 md:mt-2 md:mr-2 pb-10 flex justify-center items-center">
+      {" "}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="40"
