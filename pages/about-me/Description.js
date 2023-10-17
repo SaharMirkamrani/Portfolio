@@ -21,7 +21,7 @@ const Description = () => {
   const paragraph_4 = `As you can see, I was a member of two teams, Red lotus and Tatakae. We worked on different codebases, from liquid staking protocols to Automated Market Maker mechanisms, lending and borrowing platforms, liquidity pools and beyond.`;
 
   return (
-    <div className="bg-cream-50 text-teal-900 pb-20">
+    <div className="bg-cream-50 text-teal-900 pb-36">
       <div className="container mx-auto flex flex-col flex-col-reverse md:flex-row items-center justify-center space-x-4 px-8">
         <div className="w-3/4 md:w-1/4 text-center md:text-left">
           <p

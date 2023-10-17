@@ -52,8 +52,7 @@ const Introduction = () => {
 
 const UpArrow = () => {
   return (
-    <div className="animate-bounce text-green-300 text-xl rotate-0 transform w-1/2 md:w-5/6 mx-auto mt-12 md:mt-2 md:mr-2 pb-10 flex justify-center items-center">
-      {" "}
+<div className="flex items-center justify-center w-1/2 pb-10 mx-auto mt-12 text-xl text-green-300 transform rotate-0 animate-bounce md:w-5/6 md:mt-2 md:mr-2">      {" "}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="40"
